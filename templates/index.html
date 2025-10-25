@@ -16,6 +16,10 @@
        <script>
            var socket = io.connect('http://' + document.domain + ':' + location.port);
 
+           socket.on('connect', () => {
+            console.log('Conectado ao servidor!');
+           });
+
            socket.on('message', function(msg) {
                var ul = document.getElementById('messages');
                var li = document.createElement('li');
