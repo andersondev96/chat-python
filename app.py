@@ -89,7 +89,7 @@ def handle_disconnect():
 @socketio.on('message')
 def handle_message(data):
   print(f"Mensagem recebida: {data}")
-  emit('new message', data, broadcast=True)
+  emit('message', data, broadcast=True)
 
 if __name__ == '__main__':
   socketio.run(app, debug=True)
