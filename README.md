@@ -33,4 +33,4 @@ Este projeto é um chat em tempo real que utiliza Webhooks em Python.
 Abra issues ou pull requests para sugestões e melhorias.
 
 ## Licença
-MIT
+[MIT](./mit)
